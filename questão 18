@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   float saldo_inicial, salario, retirada, saldo_parcial;
+    printf("EXTRATO BANCARIO \n");
+    printf("\n saldo_inicial: R$ ");
+    scanf("%f", &saldo_inicial);
+    printf("\n salario: R$ ");
+    scanf("%f", salario);
+    saldo_parcial = saldo_inicial + salario;
+
+    printf("\n saldo_parcial:R$ %.2f", saldo_parcial);
+    printf("\n primeira_retirada: R$");
+    scanf("%f", &retirada);
+    saldo_parcial = saldo_parcial - retirada;
+
+    printf("\n saldo_parcial:R$ %.2f", saldo_parcial);
+    printf("\n segunda_retirada: R$");
+    scanf("%f", &retirada);
+    saldo_parcial = saldo_parcial - retirada;
+
+    printf("\n saldo_parcial:R$ %.2f", saldo_parcial);
+    printf("\n terceira_retirada: R$");
+    scanf("%f", &retirada);
+    saldo_parcial = saldo_parcial - retirada;
+
+    printf("\n saldo_parcial:R$ %.2f", saldo_parcial);
+
+    return 0;
+
+
+
+
+
+}
